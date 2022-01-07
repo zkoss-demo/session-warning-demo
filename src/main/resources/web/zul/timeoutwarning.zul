@@ -1,0 +1,14 @@
+<?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
+<?import org.zkoss.session_warning_demo.TimeoutWarningInitiator?>
+<window xmlns:n="native" mode="overlapped" closable="false" border="normal" id="sessionsExpirationWarning" visible="false"
+	position="center,center"
+	title="Session expiration warning">
+	<vlayout>
+		<n:i class="z-icon-warning" style="color:#ff6700; width: 100%; font-size: 60px; height:60px; margin:5px; text-align: center;"></n:i>
+		<label sclass="warningContent"
+			value='${c:cat3("Your session is going to expire in ", TimeoutWarningInitiator.WARNING_BEFORE_TIMEOUT_IN_SECONDS, " seconds.")}' />
+		<label sclass="warningContent"
+			value="If you want to refresh your session's timeout, click this button:" />
+		<button label="Click here to keep session alive" onClick="" />
+	</vlayout>
+</window>

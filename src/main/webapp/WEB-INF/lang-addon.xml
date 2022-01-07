@@ -1,0 +1,7 @@
+<language>
+	<addon-name>timeoutWarning</addon-name>
+	<depends>zul</depends>
+	<language-name>xul/html</language-name>
+	
+	<javascript src="/js/timeout-warning.js" />
+</language>

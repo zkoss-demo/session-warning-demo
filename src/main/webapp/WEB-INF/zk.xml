@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk>
+	<!-- [Optional]
+	Uncomment if you want to defines the application's name 
+	
+	<preference>
+		<name>org.zkoss.zk.ui.WebApp.name</name>
+		<value>session-warning-demo</value>
+	</preference>
+	-->
+	
+	<session-config>
+	    <session-timeout>65</session-timeout>
+	    <timer-keep-alive>false</timer-keep-alive>
+	    <max-desktops-per-session>15</max-desktops-per-session>
+	    <max-requests-per-session>5</max-requests-per-session>
+	    <max-pushes-per-session>3</max-pushes-per-session>
+	</session-config>
+	
+	<listener>
+	    <listener-class>org.zkoss.session_warning_demo.TimeoutWarningInitiator</listener-class>
+	</listener>
+	
+	 <language-config>
+	     <addon-uri>/WEB-INF/lang-addon.xml</addon-uri>
+	 </language-config>
+	
+</zk>

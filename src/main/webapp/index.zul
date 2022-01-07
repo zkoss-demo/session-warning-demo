@@ -1,0 +1,6 @@
+<zk>
+	<div>
+		<label value="Welcome to your ZK page"/>
+		<button label="Hello world!" onClick='Clients.showNotification("Hello world!")' />
+	</div>
+</zk>
